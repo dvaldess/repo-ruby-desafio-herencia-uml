@@ -27,7 +27,7 @@ class DailyAppointment < Appointment
         @hour == hour && @min == min
     end
     def to_s
-        # "Reunión diaria en #{self.location} sobre #{self.purpose} a la(s) #{self.hour}:#{self.min}"
+        # "Reunión diaria en #{self.location} sobre #{self.purpose} a la(s) #{self.hour}:#{self.min}" #Se recomienda utilizar esta opción
         "Reunión diaria en #{ @location } sobre #{ @purpose } a la(s) #{ @hour }:#{ @min }"# Tambien funciona
     end
 end
